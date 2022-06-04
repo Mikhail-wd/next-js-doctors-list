@@ -1,0 +1,517 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 1366px;
+  height: 768px;
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.hidden{
+  display:none;
+}
+
+.driverList {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  min-height: 100%;
+  background-color: #003B72;
+}
+
+.driverList p{
+  width: 190px;
+  margin-bottom: -3px;
+  margin-top: 0px;
+  padding-top: 20px;
+  vertical-align: middle;
+  margin-left: -40px;
+  font: 15px Rubik,sans-serif;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: white;
+}
+
+.driverList ul{
+  font: 15px Rubik,sans-serif;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: white;
+  text-align: start;
+  display: inline;
+  list-style: none;
+}
+.driverList ul li {
+  width: 190px;
+  vertical-align: middle;
+  padding: 16px 0px 16px 17px;
+  font-size: 14px;
+}
+.driverList ul p{
+  float: right;
+  width: 150px;
+  vertical-align: middle;
+  padding: initial;
+}
+.driverList ul button{
+  padding: 12px 24px;
+  font: 15px Rubik,sans-serif;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #7761FF;
+}
+.selected{
+  
+  background-color: #E5E5E5;
+}
+.selected p{
+  color: #7761FF;
+}
+.driverList div:last-child{
+  height: 0px;
+  padding: 0px;
+  margin-top: 315px;
+}
+.driverList div:last-child ul {
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 30%;
+}
+.driverList div:last-child ul li{
+  height: 22px;
+  padding-left: 15px;
+}
+.logo ul li {
+  width: 190px;
+  vertical-align: middle;
+  padding: 0px 0px 5px 17px;
+  font-size: 14px;
+}
+
+
+.driverContent{
+  width: 1176px;
+  background-color: #E5E5E5;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.myProfile{
+  color: white;
+  background-color: #50CAFF;
+  font: 28px Rubik, sans-serif;
+  line-height: 33.18px;
+  font-weight: 400;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.myProfile p {
+  height: 55px;
+  margin-left: 40px;
+  margin-top: 12px;
+}
+.myProfile ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  float: left;
+}
+.myProfile ul li {
+  margin-right: 21.5px;
+  vertical-align: middle;
+  display: inline;
+}
+.myProfile ul li div{
+  margin-right: 8px;
+  display: inline-block;
+  border: 2px solid;
+  width: 49px;
+  height: 49px;
+  border-radius: 25.5px;
+  border-color: white;
+  vertical-align: middle;
+}
+.myProfile ul li img:last-child{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.avatar {
+  width: 49px;
+  height: 49px;
+  border-radius: 24.5px;
+  border-color: #50CAFF;
+}
+
+
+.writes {
+  background-color: #E5E5E5;
+}
+
+.writes p {
+  margin: 11px 0px 11px 0px;
+  padding: 4px 0px 4px 40px;
+  font: 16px Rubik, sans-serif;
+  line-height: 19px;
+  text-align: start;
+}
+.lastPar{
+  margin-top: 20px;
+}
+
+.doctorsList{
+  overflow: hidden;
+  width: 1176px;
+  height: 195px;
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lastInRow{
+  left: 108%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  margin-top: 60px;
+  font: 14px Rubik, sans-serif;
+  line-height: 20px;
+}
+
+.lastInRow a{
+  color: #50CAFF;
+}
+
+.doctorPlate {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  width: 475px;
+  height: 174px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.doctorPlate div:first-child{
+  width: 300px;
+}
+
+.doctorPlate p {
+  font: 14px Rubik,sans-serif;
+  text-align: left;
+  display: inline-block;
+  padding: 2px 0px 10px 20px;
+  margin: 0px;
+  
+}
+.doctorPlate p:first-child{
+  width: 240px;
+  font: 16px Rubik,sans-serif;
+  text-align: left;
+  display: inline-block;
+  padding: 20px 0px 10px 20px;
+  margin-left: -42px;
+  font-weight: 600;
+}
+
+.doctorPlate div span img {
+  margin-top: 16px;
+  margin-left: 20px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 0px;
+}
+.doctorPlate button{
+  padding: 12px 24px;
+  font: 15px Rubik,sans-serif;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #7761FF;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+}
+
+
+
+.doctorsName{
+  float: right;
+  width: 200px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: start;
+}
+.doctorsName p:first-child{
+  margin: 0px;
+  margin-left: -10px;
+  padding: 0px;
+  font-weight: 600;
+}
+.doctorsName p:last-child{
+  margin-left: -30px;
+  color: #EBE7FF;
+}
+
+.writeCard {
+  margin-top: -20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1176px;
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.writeCard p:first-child {
+  padding-left: 0px;
+  font: 28px Rubik, sans-serif;
+  width: 333px;
+  line-height: 33px;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  border-bottom: #E5E5E5 3px solid;
+}
+
+.helpPlate{
+  border: solid 3px white;
+  margin-top: 15px;
+  margin-left: 7px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 540px;
+  height: 183px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.helpPlate div:first-child{
+  margin-top: -2px;
+  display: block;
+  float: left;
+  width: 133px;
+  height: 120px;
+  margin-left: -2px;
+  padding-top: 65px;
+}
+
+.helpPlate div:last-child{
+  display: inline-block;
+  width: 407px;
+  height: 116px;
+}
+.helpPlate img{
+  margin-top: 50%;
+  display: inline-block;
+  height: 50px;
+}
+
+.helpPlate ul{
+  vertical-align: middle;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  font: 16px Rubik,sans-serif;
+  line-height: 27px;
+}
+
+.helpPlate:hover ul li{
+  padding-left: 11px;
+  margin-left: 10px;
+  list-style-image : url(../public/img/content_icons/Ellipse\ 8.svg);
+}
+
+.helpPlate:hover p {
+  border-color: #50CAFF;
+}
+.helpPlate:hover div:nth-child(1){
+  height: 122px;
+  display: inline-block;
+  border-radius: 4px 0px 0px 4px;
+  border-color: #50CAFF;
+  background-color: #50CAFF;
+}
+.helpPlate:hover {
+  border-color: #50CAFF;
+}
+
+.doctors{
+  margin: 0px;
+  padding: 0px;
+}
+.doctorsWrites{
+  width: 100%;
+  margin-left: 40px;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: start;
+}
+.doctorsWrites p{
+  margin-top: -20px;
+  margin-left: 35px;
+}
+.doctors p img{
+  float:left;
+  margin-right: 14px;
+  margin-left: 40px;
+
+}
+
+
+
+.doctorsSlider {
+  float: left;
+  width: 525px;
+  height: 625px;
+  overflow: hidden scroll;
+}
+.doctorsSlider .doctorPlate{
+  margin-bottom: 15px;
+
+}
+
+.calendar {
+  border-radius: 4px;
+  float: right;
+  width: 573px;
+  height: 481px;
+  margin-right: 40px;
+  background-color: #EBE7FF;
+}
+
+.month{
+  font: 14px Rubik, sans-serif;
+  margin: 0px;
+  padding-top: 5px;
+  border-radius: 4px 4px 0px 0px;
+  width: 573px;
+  height: 57px;
+  background-color: #7761FF;
+  color: white;  
+}
+
+.calendar div:first-child img{
+  float: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.calendar div:first-child img:first-child {
+  padding-right: 18px;
+}
+
+.calendar div:first-child img:last-child {
+  padding-left: 18px;
+}
+
+.daysNames {
+  width: 100%;
+  height: 37px;
+  background-color: #EBE7FF;
+}
+.daysNames p {
+  margin: 0px;
+  text-align: center;
+  font: 14px Rubik, sans-serif;
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+}
+
+.daysMonth {
+  font: 14px Rubik,sans-serif;
+  margin: auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  width: 553px;
+}
+.days{
+  background-color: white;
+  font: 14px Rubik,sans-serif;
+  width: 79px;
+  height: 63px;
+}
+.days p:nth-child(1){
+  width: 20px;
+  padding-left: 15px;
+  height: 20px;
+  float: left;
+}
+.days p:nth-child(2){
+  width: 16px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 40px;
+  padding: 2px;
+}
+.blueNumber{
+  background-color: #50CAFF;
+  color: white;
+  border-radius: 16px;
+}
+.lastMonth{
+  background-color: #EBE7FF;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*scroll bars*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #EBE7FF;
+}
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003B72; 
+  border-radius: 10px;
+}
+
+
